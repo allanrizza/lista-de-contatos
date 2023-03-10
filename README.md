@@ -16,11 +16,16 @@ Sendo a identificação e o número dados obrigatórios.
 - Maven
 - Spring Boot - Configurações Iniciais
 - Spring Framework - Inversão de Controle com Injeção de Dependências
-  - > A forma utilizada foi a injeção de dependência por anotação com _@Autowired_
+  - A forma utilizada foi a injeção de dependência por anotação com _@Autowired_
 - Spring Data - Acesso ao banco de dados com JpaRepository
-  - > ``` public interface ContatoRepository extends JpaRepository<Contato, Integer>```
+  ```java
+  public interface ContatoRepository extends JpaRepository<Contato, Integer>
+  ```
 - Spring Validation - Validação de e-mail
-  - > ```@Email private String email ```
+  ```java
+    @Email
+    private String email;
+  ```
 
 ## Banco de Dados
 Foi utilizado o PostgreSQL, juntamente com o Postman para fazer os testes de requisições.
